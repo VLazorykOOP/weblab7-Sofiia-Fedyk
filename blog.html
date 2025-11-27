@@ -1,0 +1,182 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author"  content="Федик Софія Михайлівна"> 
+<meta name="Firm" content="Library"> 
+<meta name="Keywords"  content="Бібліотека, книги, читання, блог">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="script.js"></script>
+</head>
+<body onload="pageLoaded()">
+    <div class="container">
+        <div class="photo-column">
+            <img src="card-catalog.jpg" alt="Фото 1" onmouseover="this.style.border='5px solid red'" 
+     onmouseout="this.style.border='none'">
+            <img src="curiousrader.webp" alt="Фото 2" onmouseover="this.style.border='5px solid red'" 
+     onmouseout="this.style.border='none'">
+            <img src="kidsread.jpg" alt="Фото 3" onmouseover="this.style.border='5px solid red'" 
+     onmouseout="this.style.border='none'">
+            <img src="ibook.jpg" alt="Фото 4" onmouseover="this.style.border='5px solid red'" 
+     onmouseout="this.style.border='none'">
+            <img src="interbook.jpg" alt="Фото 5" onmouseover="this.style.border='5px solid red'" 
+     onmouseout="this.style.border='none'">
+        </div>
+    <div class="content">
+        <h1 onclick="headerClick(this)">🌿✨ Ласкаво просимо до нашої бібліотеки-мрії ✨🌿</h1>
+        <hr>
+        <hr>
+        <h4 dir="ltr" class="main-info">
+            Тут книги пахнуть лісом і свободою, час сповільнюється, а кожна сторінка — наче крок у нову казку.
+            Ми створили простір, де легко дихати, думати, творити й бути собою. Без зайвого шуму. Без поспіху. У гармонії з природою 🌱📚
+        </h4>
+           
+        <hr>
+        <h3 onclick="headerClick(this)">🆕 Останні оновлення 🌼</h3>
+        <h3>📅 5 жовтня 2025 — Осінній День Тиші</h3>
+        <h6 dir="ltr" class="main-info">Цього місяця на полицях з’явилися теплі історії про природу, самоідентичність, подорожі без вуглецевого сліду та добрі казки для дорослих.</h6>
+
+        <h6 dir="ltr" class="main-info"><i>Вхід вільний. Початок о 11:00.</i></h6>
+        <a dir="ltr" class="main-info" href="new.html"><i>Про майбутні події дізнавайтесь тут</i></a>
+        <hr>
+
+        <hr>
+        <h3 onclick="headerClick(this)">🍂 Нові книги — як перші листочки осені</h3>
+        <h6 dir="ltr" class="main-info">Запрошуємо провести день у тиші серед книг, аромату трав і м’якого світла свічок.
+            Ми приглушуємо звуки міста й відкриваємо простір для внутрішніх подорожей.</h6>
+        <h3>📖 Особливо радимо:</h3>
+        <h3><ul>
+            <li>— «Тихий сад» — збірка есе про життя поруч із деревами</li>
+            <li>— «Море в мені» — ліричний роман про втечу від шуму</li>
+            <li>— «Їсти з любов’ю» — новий веганський кулінарний путівник</li>
+        </ul></h3>
+        <a dir="ltr" class="main-info" href="new.html"><i>Онлайн-каталог</i></a>
+        <hr>
+
+        <hr>
+        <h3>🌿 Онлайн-бронювання у 2 кліки</h3>
+        <h6 dir="ltr" class="main-info">Знайдіть книгу, натисніть «🍃 Забронювати» — і ми залишимо її для вас на полиці біля вікна з видом на сад.
+        <br>Жодних черг. Лише спокій.</h6>
+        <a dir="ltr" class="main-info" href="new.html"><i>Забронювати</i></a>
+        <hr>
+
+        <hr>
+        <h3>🌕 Молодіжні вечори біля ламп</h3>
+        <h6 dir="ltr" class="main-info">Щоп’ятниці збираємось, щоб читати вголос, обмінюватись думками, малювати чи просто мріяти під музику на вінілах.</h6>
+        <h6 dir="ltr" class="main-info"><i>📍 Зелений зал, 18:00</i></h6>
+        <h6 dir="ltr" class="main-info">Принесіть свою чашку — у нас трав’яний чай 🍵</h6>
+        <a dir="ltr" class="main-info" href="new.html"><i>Більше подій тут</i></a>
+        <hr>
+
+        <hr>
+        <h3>📝 Підпишіться на наші листи 🌸</h3>
+        <h6 dir="ltr" class="main-info">Раз на тиждень ми шепочемо вам новини: про нові книги, магічні зустрічі й рецепти веганських десертів 🍰✨
+        <br> Ніякого спаму. Лише затишок.</h6>
+        <a dir="ltr" class="main-info"><i href="new.html">Підписатись</i></a>
+        <hr>
+
+        <h3>✏️ Додати нову публікацію</h3>
+        
+        <form name="news_form" autocomplete="off" class="main-info">
+            <fieldset title="Введення даних для новини">
+                <legend>Введіть інформацію</legend>
+                
+                <label for="news_title">Заголовок (max 100 символів):</label><br>
+                <input 
+                    type="text" 
+                    name="news_title" 
+                    id="news_title" 
+                    required 
+                    max="100" 
+                    placeholder="Короткий заголовок новини"
+                ><br>
+
+                <label for="news_category">Категорія публікації:</label><br>
+                
+            <select 
+                id="news_category" 
+                name="category" 
+                required 
+                size="1" 
+                style="margin-bottom: 15px;"
+            >
+                <option disabled selected label="Оберіть категорію">Оберіть категорію</option> 
+                <option value="new_author">Новий автор</option>
+                <option value="book_release">Реліз книжки</option>
+                <option value="famous_authors">Новини про відомих авторів</option>
+                <option value="book_review">Огляд книги</option>
+                <option value="book_event">Оголошення про книжковий івент</option>
+            </select><br>
+
+                <label for="author_name">Ваше ім'я (для відображення):</label><br>
+                <input 
+                    type="text" 
+                    name="author_name" 
+                    id="author_name" 
+                    placeholder="Введіть своє ім'я або псевдонім"
+                    style="margin-bottom: 10px;"
+                ><br>
+
+                <div style="margin-bottom: 20px;">
+                    <input 
+                        type="checkbox" 
+                        name="display_author" 
+                        id="display_author" 
+                        checked 
+                    >
+                    <label for="display_author" style="display: inline; margin-top: 0; color: purple;">Я згоден/а на відображення мого імені, як автора публікації.</label>
+                </div>
+                <label for="news_content">Текст новини:</label><br>
+                <textarea 
+                    name="news_content" 
+                    id="news_content" 
+                    cols="50" 
+                    placeholder="Повний текст новини тут..." 
+                    autofocus 
+                    wrap="soft"
+                ></textarea><br>
+                
+                <button type="submit" value="Опублікувати" name="publish_button" formenctype="application/x-www-form-urlencoded">
+                    Опублікувати новину
+                </button>
+                <button type="reset" value="Скинути" formnovalidate>
+                    Очистити
+                </button>
+
+            </fieldset>
+        </form>
+
+    </h6> 
+            <section style="border: 2px solid #ccc; padding: 20px; margin: 20px 0;">
+    <h3>Блок виконання завдань JS (Лаб 7)</h3>
+
+    <h4>Завдання 3: Аналіз форми</h4>
+    <form id="myForm">
+        <input type="text" name="login" placeholder="Логін">
+        <input type="checkbox" name="rules"> Правила
+        <button type="button" onclick="runTask3('myForm', 'out3')">Аналіз форми</button>
+        <br>
+        <textarea id="out3" style="width: 300px; height: 100px;"></textarea>
+    </form>
+
+    <hr>
+
+    <h4>Завдання 5: Регулярні вирази</h4>
+    <p>Введіть текст (спробуйте ввести слова на 'п...я', цифри тощо):</p>
+    <textarea id="textInput" style="width: 300px;">Привіт, це приклад 123. Популяція та пісня.</textarea>
+    <br>
+    <button type="button" onclick="runTask5('textInput', 'out5')">Обробити текст</button>
+    <br>
+    <textarea id="out5" style="width: 300px; height: 100px;"></textarea>
+
+    <hr>
+
+    <h4>Завдання 6: Масиви</h4>
+    <button type="button" onclick="runTask6('out6')">Обробити масив</button>
+    <br>
+    <textarea id="out6" style="width: 300px; height: 50px;"></textarea>
+</section>
+        </div>
+    </div>
+</body>
+</html>
